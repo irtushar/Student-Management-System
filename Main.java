@@ -35,16 +35,16 @@ public class Main
 		  else if(choice == 3)
 		    {
 			  operation.delete(students);
-	     	}
+	     	    }
 		  else if(choice == 4)
 		    {
 			  operation.searchByYear(students);
-	     	}
-		  else if(choice == 0)break; 
+	            }
+		  else if(choice == 0)
 		    {
-		 	
+		 	break; 
 		    }
-	 }	
+	  }	
 	      System.out.println("Thank you for using our system");
    }
 }
