@@ -41,9 +41,6 @@ public class StudentOperation
 			if(id.equalsIgnoreCase(s.id) == true)
 			{
 				this.display(s);
-				System.out.println(s.name+"this student is removed");
-				students.remove(s);
-				System.out.println("Removed successful, total student are: "+ students.size());
 				return;
 			}
 		}
@@ -62,7 +59,6 @@ public class StudentOperation
 			if(s.year == year)
 			{
 				this.display(s);
-		
 			}
 		}
 	}
@@ -77,6 +73,8 @@ public class StudentOperation
 			if(id.equalsIgnoreCase(s.id) == true)
 			{
 				this.display(s);
+				students.remove(s);
+				System.out.println("Removed successful, total student are: "+ students.size());
 				return;
 			}
 		}
@@ -84,7 +82,7 @@ public class StudentOperation
 	}
 	
 	public void display(Student students)
-    {
+       {
 		System.out.println("Name: "+ students.name +"\n");
 		System.out.println("Id: "+ students.id+"\n");
 		System.out.println("Mobile: "+ students.mobile+"\n");
